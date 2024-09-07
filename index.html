@@ -16,10 +16,14 @@
           <img src="assets/home/placeholder.jpg" class="placeholder">
           <div class="block1">
             <div class="buttons1">
-              <button class="mainbutton">HOME</button>
-              <button class="mainbutton">PRICELIST</button>
-              <button class="mainbutton">T.O.S.</button>
+
+              <button class="mainbutton" id="main">HOME</button>
+              <button class="mainbutton" id="pricelist">PRICELIST</button>
+              <button class="mainbutton" id="tos">T.O.S.</button>
             </div>
+            <input type="radio" name="page" checked id="mainpage">
+            <input type="radio" name="page" id="pricelistpage">
+            <input type="radio" name="page" id="tospage">
             <hr class="divider1">
             <div class="home">
               <p class="text1">ASUSYA</p>
@@ -38,7 +42,9 @@
                 <button class="linksunit">DERPIBOORU (NSFW)</button>
               </div>
               <img class="asusgif" src="assets/home/asus.gif" style="position:absolute; width: 150px; height: 150px; left: calc(50% - 75px); top: 700px;">
-            </div>  
+            </div>
+            <div class="pricelist"></div>  
+            <div class="tos"></div>
           </div>
     </div>  
     <script src="index.js"></script>

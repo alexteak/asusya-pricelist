@@ -20,6 +20,7 @@
     top: 20px;
     background-color: white;
     left: 25%;
+    overflow: hidden;
   }
 
   .buttons1{
@@ -43,6 +44,13 @@
     height: 90%;
     top: 5%;
     transition: background-color 0.25s;
+  }
+
+  .home{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    transition: left 1s;
   }
 
   .mainbutton:hover{
@@ -172,3 +180,52 @@
     top: 50px;
     left: 25px;
   }
+
+
+  #mainpage:checked ~ .home {
+    left: 0%
+  }
+  #pricelistpage:checked ~ .home {
+    left: -100%
+  }
+  #tospage:checked ~ .home {
+    left: -200%
+  }
+  #mainpage:checked ~ .pricelist {
+    left: 100%
+  }
+  #pricelistpage:checked ~ .pricelist {
+    left: 0%
+  }
+  #tospage:checked ~ .pricelist {
+    left: -100%
+  }
+  #mainpage:checked ~ .tos {
+    left: 200%
+  }
+  #pricelistpage:checked ~ .tos {
+    left: 100%
+  }
+  #tospage:checked ~ .tos {
+    left: 0%
+  }
+
+  .pricelist{
+    position: absolute;
+    background-color: aquamarine;
+    width: 100%;
+    height: 900px;
+    left: 100%;
+    transition: left 1s;
+  }
+
+  .tos{
+    position: absolute;
+    background-color: burlywood;
+    width: 100%;
+    height: 900px;
+    left: 100%;
+    transition: left 1s;
+  }
+
+
